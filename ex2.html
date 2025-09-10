@@ -10,6 +10,12 @@
         }
 
         /* add CSS code here */
+        #div2 {
+            width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+            border-radius: 50%;
+        }
         
     </style>
 
@@ -26,6 +32,17 @@
     <script>
         var square=true;
        // add code here
+       function changeShape() {
+        const current_shape = document.getElementsByTagName("div")[0];
+        if (current_shape.id == "div1") {
+            current_shape.id = "div2";
+        }
+        else {
+            current_shape.id = "div1";
+        }
+        console.log(current_shape.id);
+
+       }
         
     </script>
 
